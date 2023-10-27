@@ -15,7 +15,9 @@ while True:
         print("try again")
     if op=="/"and b!=0:
         print(a/b)
-    if op=="//":
+    if op=="//" and b==0:
+        print("try again")
+    if op=="//" and b!=0:
         print(a//b)
     if op=="**":
         print(a**b)
