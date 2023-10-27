@@ -19,8 +19,10 @@ while True:
         print(a//b)
     if op=="**":
         print(a**b)
-    if op=="sqrt":
+    if op=="sqrt" and a>=0 and b>=0:
         print(math.sqrt(a),",",math.sqrt(b))
+    if op== "sqrt" and ((a or b)<0):
+        print("please try again")
     if op=="sin":
         print(math.sin(math.radians(a)),math.sin(math.radians(b)))
     if op=="cos":
